@@ -2038,6 +2038,11 @@ Meshy.prototype.initViewport = function() {
     var k = e.key.toLowerCase();
     var caught = true;
 
+    // open model by 'o'
+    if (k === 'o') {
+      _this.import();
+    }
+
     if (e.ctrlKey) {
       if (e.shiftKey) {
         if (k=="z") _this.redo();

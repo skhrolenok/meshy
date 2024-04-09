@@ -706,6 +706,8 @@ Model.prototype.getOctree = function() {
 
 // color the verts according to their local diameter
 Model.prototype.viewThickness = function(threshold) {
+  console.log("start thickness measurement");
+  console.time();
   var octree = this.getOctree();
 
   // set the material
@@ -741,6 +743,8 @@ Model.prototype.viewThickness = function(threshold) {
   }
 
   geo.colorsNeedUpdate = true;
+  console.timeEnd();
+  console.log("end thickness measurement");
 }
 
 // clear any coloration that occurred as part of thickness visualization

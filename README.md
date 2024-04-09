@@ -19,7 +19,7 @@ The main viewport uses mouse and keyboard controls:
 * LMB to rotate the camera
 * scroll wheel to zoom
 * MMB/RMB to pan
-* `ctrl+i` to import a mesh
+* `ctrl+i | o` to import a mesh
 * `f` to center the camera on the mesh
 * `g` toggles the gizmo
 * `c` toggles the center-of-mass indicator
